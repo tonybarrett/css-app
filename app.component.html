@@ -1,0 +1,7 @@
+<div id="flex-page" (click)="toggleActive()">
+  <div id="outer-box" [ngClass]="{'outer-active': isActive, 'outer-inactive' : !isActive }">
+    <div id="inner-box" [ngClass]="{'inner-active': isActive, 'inner-inactive' : !isActive }">
+      IsActive = {{isActive}}
+    </div>
+  </div>
+</div>
