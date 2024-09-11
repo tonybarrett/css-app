@@ -14,8 +14,15 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   isActive: boolean = true;
 
+  constructor() {
+    setTimeout(() => {
+      this.isActive = false;
+    }, 2000);
+  }
+
   public toggleActive(): void{
     this.isActive = !this.isActive;
   }
+
 
 }
